@@ -285,5 +285,7 @@ create or replace package ut_utils authid definer is
    */
   function scale_cardinality(a_cardinality natural) return natural;
 
+  function build_depreciation_warning(a_old_syntax varchar2, a_new_syntax varchar2) return varchar2;
+
 end ut_utils;
 /
